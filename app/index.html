@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="libs/card-js.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<form class="form-horizontal" id="example-form" action="adduser.php" method="post">
+
+       <h2>Payment</h2>
+
+        <!--
+          -- Card JS Input Group
+          -->
+        <div class="card-js form-group">
+
+            <!-- Card number -->
+            <input class="card-number form-control"
+                   name="card-number"
+                   placeholder="Enter your card number"
+                   autocomplete="off"
+                   required>
+
+            <!-- Name on card -->
+            <input class="name form-control"
+                   id="the-card-name-id"
+                   name="card-name"
+                   placeholder="Enter the name on your card"
+                   autocomplete="off"
+                   required>
+
+
+            <!-- Card expiry (element that is displayed) -->
+            <input class="expiry form-control"
+                   autocomplete="off"
+                   required>
+
+            <!-- Card expiry - Month (hidden) -->
+            <input class="expiry-month" name="card-expiry-month">
+
+            <!-- Card expiry - Year (hidden) -->
+            <input class="expiry-year" name="card-expiry-year">
+
+
+            <!-- Card CVC -->
+            <input class="cvc form-control"
+                   name="card-cvc"
+                   autocomplete="off"
+                   required>
+
+        </div><!-- END .card-js wrapper -->
+
+
+        <!--
+          -- Submit button
+          --
+          -- (Must be outside of the div with class 'card-js')
+          -->
+        <button type="submit">Submit</button>
+
+</form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="libs/card-js.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

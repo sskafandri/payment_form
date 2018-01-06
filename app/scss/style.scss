@@ -1,0 +1,70 @@
+body input:focus:required:invalid,
+body textarea:focus:required:invalid{
+
+  color: red;
+}
+body input:required:valid,
+body textarea:required:valid{
+  color: green;
+}
+
+
+h2{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 20px/60px 'Roboto', Arial, sans-serif;
+  color: #404040;
+  background: #dbe0eb;
+}
+
+.card-js .card-number-wrapper, .card-js .cvc-wrapper, .card-js .expiry-wrapper, .card-js .name-wrapper {
+  box-shadow: none;
+  position: relative;
+}
+
+form {
+  margin: 50px auto;
+  padding: 20px;
+  width: 350px;
+  background-color: #e8edf8;
+  border-radius: 10px;
+  button {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #3484b7;
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 12px;
+    outline: none;
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    
+    &:hover{
+      background-color: #2e76a3;
+    }
+  }
+}
+.card-js input, .card-js select{
+  height: 50px;
+}
+
+.card-js .icon{
+  top: 4px;
+}
+
+.expiry-wrapper .icon,
+.cvc-wrapper .icon
+{
+  top: -5px;
+}
+
+.card-js .card-number-wrapper .card-type-icon {
+  top: 20px;
+}
+
+
